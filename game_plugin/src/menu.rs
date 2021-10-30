@@ -58,7 +58,7 @@ fn setup_menu(
                     sections: vec![TextSection {
                         value: "Play".to_string(),
                         style: TextStyle {
-                            font: font_assets.fira_sans.clone(),
+                            font: font_assets.kenney_future.clone(),
                             font_size: 40.0,
                             color: Color::rgb(0.9, 0.9, 0.9),
                         },

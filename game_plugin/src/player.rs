@@ -27,11 +27,11 @@ fn spawn_camera(mut commands: Commands) {
 fn spawn_player(
     mut commands: Commands,
     textures: Res<TextureAssets>,
-    mut materials: ResMut<Assets<ColorMaterial>>,
 ) {
     commands
-        .spawn_bundle(SpriteBundle {
-            material: materials.add(textures.texture_bevy.clone().into()),
+        .spawn_bundle(SpriteSheetBundle {
+            texture_atlas: textures.ships.clone(),
+            sprite: TextureAtlasSprite::new(0),
             transform: Transform::from_translation(Vec3::new(0., 0., 1.)),
             ..Default::default()
         })

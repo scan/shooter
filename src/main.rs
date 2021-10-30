@@ -12,7 +12,7 @@ fn main() {
     let mut app = App::build();
     app
         // .insert_resource(Msaa { samples: 4 })
-        .insert_resource(ClearColor(Color::rgb(0.0, 0.0, 0.0)))
+        .insert_resource(ClearColor(Color::rgb(0.7, 0.7, 1.0)))
         .insert_resource(WindowDescriptor {
             width: 800.,
             height: 600.,
