@@ -7,7 +7,7 @@ pub struct LoadingPlugin;
 
 impl Plugin for LoadingPlugin {
     fn build(&self, app: &mut AppBuilder) {
-        AssetLoader::new(GameState::Loading, GameState::Menu)
+        AssetLoader::new(GameState::Loading, GameState::Playing)
             .with_collection::<FontAssets>()
             .with_collection::<AudioAssets>()
             .with_collection::<TextureAssets>()
